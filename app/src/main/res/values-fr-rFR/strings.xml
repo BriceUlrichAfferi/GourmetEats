@@ -30,7 +30,7 @@
     <string name="favorite_button_initial">Favori</string>
     <string name="pseudo_description">Entrez votre pseudonyme</string>
     <string name="pseudo_validate_toast_message">Pseudonyme validé!</string>
-    <string name="validate_button_description">Envoyer le formulaire</string>
+    <string name="validate_button_description">Valider les données saisies</string>
     <string name="pseudo_hint">Zone de modification pour Pseudonyme</string>
     <string name="pseudo_error_message">Le nom d\'utilisateur doit comporter au moins 3 caractères</string>
     <string name="pseudo_suggestion_message">Essayez de saisir un nom d\'utilisateur comme « JeanLebrun123 »".</string>

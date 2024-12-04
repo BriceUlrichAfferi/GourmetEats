@@ -32,7 +32,7 @@
         <ImageButton
             android:id="@+id/removeButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:src="@drawable/ic_remove"
             android:contentDescription="@string/remove_button"
             tools:ignore="TouchTargetSizeCheck"/>
@@ -51,7 +51,7 @@
         <ImageButton
             android:id="@+id/addButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:src="@drawable/ic_add"
             android:contentDescription="@string/ajout_button"
             tools:ignore="TouchTargetSizeCheck"

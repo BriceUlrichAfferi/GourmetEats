@@ -29,7 +29,7 @@
     <string name="favorite_button_initial">Favorite</string>
     <string name="pseudo_hint">Edit area for pseudonym</string>
     <string name="pseudo_description">Enter your Pseudonyme</string>
-    <string name="validate_button_description">Submit the form</string>
+    <string name="validate_button_description">Validate the entered data</string>
     <string name="recipe_added_toast_message">Chocolate cookies added to cart</string>
     <string name="pseudo_error_message">Username must be at least 3 characters long</string>
     <string name="pseudo_validate_toast_message">Pseudonym validated!</string>

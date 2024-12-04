@@ -1,8 +1,11 @@
 package fr.opc.practice.p9a11y
 
 import android.os.Bundle
+import android.view.View
+import android.view.accessibility.AccessibilityNodeInfo
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.accessibility.AccessibilityNodeInfoCompat
 import fr.opc.practice.p9a11y.databinding.ActivityCase2Binding
 
 class Case2Activity : AppCompatActivity() {
@@ -17,8 +20,31 @@ class Case2Activity : AppCompatActivity() {
         var isFavourite = false
         var isFirstEncounter = true
 
-        // Set initial content description for the favorite button
-        binding.favouriteButton.contentDescription = getString(R.string.favorite_button_initial)
+        // Add custom action to recipeCard
+        binding.recipeCard.accessibilityDelegate = object : View.AccessibilityDelegate() {
+            override fun onInitializeAccessibilityNodeInfo(host: View, info: AccessibilityNodeInfo) {
+                super.onInitializeAccessibilityNodeInfo(host, info)
+                val customAction = AccessibilityNodeInfoCompat.AccessibilityActionCompat(
+                    AccessibilityNodeInfoCompat.ACTION_CLICK,
+                    getString(R.string.view_recipe_details)
+                )
+                AccessibilityNodeInfoCompat.wrap(info).addAction(customAction)
+            }
+        }
+
+        // Add custom action to favoriteButton
+        binding.favouriteButton.accessibilityDelegate = object : View.AccessibilityDelegate() {
+            override fun onInitializeAccessibilityNodeInfo(host: View, info: AccessibilityNodeInfo) {
+                super.onInitializeAccessibilityNodeInfo(host, info)
+
+                val toggleFavoriteAction = AccessibilityNodeInfoCompat.AccessibilityActionCompat(
+                    AccessibilityNodeInfoCompat.ACTION_CLICK,
+                    if (isFavourite) getString(R.string.remove_favourite)
+                    else getString(R.string.add_to_favourite)
+                )
+                AccessibilityNodeInfoCompat.wrap(info).addAction(toggleFavoriteAction)
+            }
+        }
 
         // Handle favorite button click
         binding.favouriteButton.setOnClickListener {
@@ -27,13 +53,12 @@ class Case2Activity : AppCompatActivity() {
             setFavouriteButtonIcon(isFavourite)
         }
 
-        // Handle "Add to Basket" button click
+
         binding.addRecipeToBasket.setOnClickListener {
             Toast.makeText(this, getString(R.string.recette_ajout_au_panier), Toast.LENGTH_SHORT)
                 .show()
         }
 
-        // Handle recipe card click
         binding.recipeCard.setOnClickListener {
             Toast.makeText(
                 this,

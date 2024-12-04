@@ -27,6 +27,7 @@
     <string name="removed_from_favourites">Supprimé des favoris</string>
     <string name="perform_card_actions">Effectuer des actions sur la carte</string>
     <string name="choose_action">Choisir une action</string>
+    <string name="view_recipe_details">Voir les détails de la recette</string>
     <string name="favorite_button_initial">Favori</string>
     <string name="pseudo_description">Entrez votre pseudonyme</string>
     <string name="pseudo_validate_toast_message">Pseudonyme validé!</string>

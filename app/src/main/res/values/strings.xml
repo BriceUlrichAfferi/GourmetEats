@@ -18,19 +18,20 @@
     <string name="ajout_button">Add</string>
     <string name="quantity_content_description">Quantity: %1$d\n</string>
 
-    <string name="add_to_favourite">Add to Favourites</string>
-    <string name="remove_favourite">Remove from Favourites</string>
+    <string name="add_to_favourite">Added to Favourites</string>
+    <string name="remove_favourite">Removed from Favourites</string>
     <string name="add_to_basket">Add to Basket</string>
     <string name="navigate_to_recipe">View Recipe Details</string>
     <string name="marked_as_favourite">Marked as Favourite</string>
     <string name="removed_from_favourites">Removed from Favourites</string>
     <string name="perform_card_actions">Perform actions on the card</string>
     <string name="choose_action">Choose an action</string>
+    <string name="view_recipe_details">View Recipe Details</string>
     <string name="favorite_button_initial">Favorite</string>
     <string name="pseudo_hint">Edit area for pseudonym</string>
     <string name="pseudo_description">Enter your Pseudonyme</string>
     <string name="validate_button_description">Validate the entered data</string>
-    <string name="recipe_added_toast_message">Chocolate cookies added to cart</string>
+    <string name="recipe_added_toast_message">Recipe Details opened</string>
     <string name="pseudo_error_message">Username must be at least 3 characters long</string>
     <string name="pseudo_validate_toast_message">Pseudonym validated!</string>
     <string name="pseudo_suggestion_message">Try entering a username like "JohnFisher123".</string>

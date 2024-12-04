@@ -46,7 +46,6 @@ class Case1Activity : AppCompatActivity() {
     private fun updateQuantityTextAndAnnounce(quantity: Int) {
         binding.quantityText.text = "$quantity"
 
-        // Temporarily clear the content description
         binding.quantityText.contentDescription = null
 
         // small delay to reset the content description to force TalkBack to announce

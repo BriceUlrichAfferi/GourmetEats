@@ -15,27 +15,41 @@ class Case2Activity : AppCompatActivity() {
         setContentView(view)
 
         var isFavourite = false
-        setFavouriteButtonIcon(isFavourite)
+        var isFirstEncounter = true
+
+        // Set initial content description for the favorite button
+        binding.favouriteButton.contentDescription = getString(R.string.favorite_button_initial)
+
+        // Handle favorite button click
         binding.favouriteButton.setOnClickListener {
             isFavourite = !isFavourite
+            isFirstEncounter = false
             setFavouriteButtonIcon(isFavourite)
         }
 
+        // Handle "Add to Basket" button click
         binding.addRecipeToBasket.setOnClickListener {
             Toast.makeText(this, getString(R.string.recette_ajout_au_panier), Toast.LENGTH_SHORT)
                 .show()
         }
 
+        // Handle recipe card click
         binding.recipeCard.setOnClickListener {
-            // TODO navigate to recipe screen
+            Toast.makeText(
+                this,
+                getString(R.string.recipe_added_toast_message),
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 
     private fun setFavouriteButtonIcon(isFavourite: Boolean) {
         if (isFavourite) {
             binding.favouriteButton.setImageResource(R.drawable.ic_favourite_on)
+            binding.favouriteButton.contentDescription = getString(R.string.add_to_favourite)
         } else {
             binding.favouriteButton.setImageResource(R.drawable.ic_favourite_off)
+            binding.favouriteButton.contentDescription = getString(R.string.remove_favourite)
         }
     }
 }

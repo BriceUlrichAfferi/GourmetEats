@@ -1,18 +1,39 @@
 <resources>
-    <string name="app_name">P9A11y</string>
-    <string name="cas_3_formulaire_de_connexion">Cas 3: Formulaire de connexion</string>
-    <string name="cas_2_carte_de_suggestion_de_recettes">Cas 2 : Carte de suggestion de recettes</string>
-    <string name="cas_1_bouton_d_ajout_au_panier">Cas 1 : Bouton d\'ajout au panier</string>
-    <string name="cas_1">Cas 1 :</string>
-    <string name="impossible_d_avoir_une_quantit_n_gative">Impossible d\'avoir une quantité négative</string>
-    <string name="cas_2">Cas 2 :</string>
-    <string name="cd_ajouter_aux_favoris">Ajouter aux favoris</string>
-    <string name="ajouter">Ajouter</string>
-    <string name="demo_cookie_text">Cookies au chocolat</string>
-    <string name="recette_ajout_au_panier">Recette ajoutée au panier</string>
-    <string name="cas_3">Cas 3 :</string>
-    <string name="pseudo">Pseudonyme :</string>
-    <string name="validate">Valider</string>
-    <string name="demo_product_name">Nom du produit</string>
+    <string name="app_name">GourmetEats</string>
+    <string name="cas_3_formulaire_de_connexion">Case 3: Login form</string>
+    <string name="cas_2_carte_de_suggestion_de_recettes">Case 2: Recipe suggestion card</string>
+    <string name="cas_1_bouton_d_ajout_au_panier">Case 1: Add to cart button</string>
+    <string name="cas_1">Case 1:</string>
+    <string name="impossible_d_avoir_une_quantit_n_gative">Cannot have a negative quantity</string>
+    <string name="cas_2">Case 2:</string>
+    <string name="cd_ajouter_aux_favoris">Add to favorites</string>
+    <string name="ajouter">Add</string>
+    <string name="demo_cookie_text">Chocolate cookies</string>
+    <string name="recette_ajout_au_panier">Recipe added to cart</string>
+    <string name="cas_3">Case 3:</string>
+    <string name="pseudo">Pseudonym:</string>
+    <string name="validate">Validate</string>
+    <string name="demo_product_name">Product name</string>
+    <string name="remove_button">Subtract</string>
+    <string name="ajout_button">Add</string>
+    <string name="quantity_content_description">Quantity: %1$d\n</string>
+
+    <string name="add_to_favourite">Add to Favourites</string>
+    <string name="remove_favourite">Remove from Favourites</string>
+    <string name="add_to_basket">Add to Basket</string>
+    <string name="navigate_to_recipe">View Recipe Details</string>
+    <string name="marked_as_favourite">Marked as Favourite</string>
+    <string name="removed_from_favourites">Removed from Favourites</string>
+    <string name="perform_card_actions">Perform actions on the card</string>
+    <string name="choose_action">Choose an action</string>
+    <string name="favorite_button_initial">Favorite</string>
+    <string name="pseudo_hint">Edit area for pseudonym</string>
+    <string name="pseudo_description">Enter your Pseudonyme</string>
+    <string name="validate_button_description">Submit the form</string>
+    <string name="recipe_added_toast_message">Chocolate cookies added to cart</string>
+    <string name="pseudo_error_message">Username must be at least 3 characters long</string>
+    <string name="pseudo_validate_toast_message">Pseudonym validated!</string>
+    <string name="pseudo_suggestion_message">Try entering a username like "JohnFisher123".</string>
+
 
 </resources>
